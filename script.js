@@ -41,7 +41,11 @@ function nextPrev(n) {
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
-  
+  console.log('hey')
+  var x = document.querySelector("input").value;
+  document.getElementById("demo").innerHTML = `Hey , ${x} 👋`;
+  console.log(x)
+    
 }
 
 function validateForm() {
@@ -77,9 +81,12 @@ function fixStepIndicator(n) {
   x[n].className += " active";
   let remove = document.querySelector('#remove')
   console.log(remove)
-  
+ 
+
 }
-let remover = document.querySelector('#remove')
+
+
+
 const GenerateQuote = async () => {
   var url = "https://type.fit/api/quotes";
 
@@ -92,5 +99,5 @@ const GenerateQuote = async () => {
   if (!auth) author = "Anonymous";
   document.getElementById("QuoteText").innerHTML = quoteText;
   document.getElementById("author").innerHTML = "~ " + auth;
- 
+  
 }

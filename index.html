@@ -26,30 +26,12 @@
     </div>
       <!-- One "tab" for each step in the form: -->
       <div class="tab">Name:
-        <p><input required name="name" type="text" placeholder="First name..." oninput="this.className = ''"></p>
-        <p><input name="name" type="text" placeholder="Last name..." oninput="this.className = ''"></p>
-      </div>
-    
-      <div class="tab">Contact Info:
-        <p><input required name="email" type="email" placeholder="E-mail..." oninput="this.className = ''"></p>
-        <p><input required name="number" minlength="11" maxlength="11" type="number" placeholder="Phone..." oninput="this.className = ''"></p>
-      </div>
-    
-      <div class="tab">Birthday:
-        <p><input type="number" min="2" required maxlength="2" placeholder="dd" oninput="this.className = ''"></p>
-        <p><input type="number" min="2" required maxlength="2" placeholder="mm" oninput="this.className = ''"></p>
-        <p><input type="number" min="2" required maxlength="4" placeholder="yyyy" oninput="this.className = ''"></p>
+        <p><input required name="name" type="text" class="input1" value="" placeholder="First name..." oninput="this.className = ''"></p>
       </div>
     
       
-      <div class="tab">Login Info:
-        <p><input required name="name" class="input1" value="Username" type="name" placeholder="Username..." oninput="this.className = ''"></p>
-        <p><input required name="password" minlength="6" maxlength="15" type="password" placeholder="Password..." oninput="this.className = ''"></p>
-      </div>
     <div class="tab">
-     <h2>Thanks, we recieved your information</h2>
-     <br/>
-     <p>Click 'Next' to Continue</p>
+     <h3 class="click-next">Click 'Next' to Proceed</h3>
      <br />
     </div>
     <div class="tab">
@@ -78,9 +60,6 @@
       <div style="text-align:center;margin-top:40px;">
         <span class="step"></span>
         <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
       </div>
     
     </form>
@@ -92,6 +71,16 @@
         var x = document.getElementsByClassName("input1").value;
         document.getElementById("demo").innerHTML = x;
       }
+      // function garri() {
+      //     let unhide = document.querySelector("#unhide")
+      //     let input1 = document.querySelector('.input1')
+      //     console.log(unhide)
+      //     console.log()
+      //     let me = (input1.value)
+      //     console.log(me)
+      //     unhide.innerHTML.textContent = me;
+      //     unhide.style.display = 'block'
+      //   }
   </script>
 </body>
 </html>
