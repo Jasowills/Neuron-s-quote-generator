@@ -1,0 +1,203 @@
+*{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(4, 4, 20, 0.918);
+}
+#cover{
+  padding: 1.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.text{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.text img{
+  width: 70px;
+}
+
+/* Style the form */
+#regForm {
+  background-color: transparent;
+  margin: 30px auto;
+  width: 70%;
+}
+h1{
+  color: white;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 98%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 20px;
+  background-color: white;
+  caret-color: black;
+  color: blue;
+}
+button{
+  width: 160px;
+  padding: 0.5rem;
+  background-color: lightblue;
+  font-size: 17px;
+   border: 0;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+.boxSize {
+  margin-top: 0;
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(4, 4, 20, 0.918);
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 33px;
+  color: blue;
+}
+
+.QuoteText {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.QuoteWR {
+  color: white;
+  margin-top: 30px;
+}
+
+.author {
+  margin: 10px;
+  text-align: right;
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+  color: white;
+}
+
+.QuoteBtn {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.GenerateQuote_next {
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: lightblue;
+  border: 0;
+}
+.GenerateQuote_next:hover {
+  background-color: black;
+}
+.unhide{
+  display: none;
+  color: white;
+}
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+@media screen and (max-width: 800px) {
+ .text{
+  font-size: 16px;
+ } 
+ .text img{
+  width: 50px;
+ }
+ section h2{
+  font-size: 14px;
+ }    
+ #regForm{
+  width: 90%;
+  margin: auto;
+ }
+ .input{
+  font-size: 13px;
+ }
+ .boxSize{
+  width: 70%;
+ }
+ label{
+  font-size: 13px;
+ }
+ .alert{
+  font-weight: 13px;
+ }
+ .link{
+  padding: 1rem;
+ }
+ .QuoteWR {
+   color: white;
+   margin-top: 30px;
+ }
+
+ .author {
+   margin: 10px;
+   text-align: right;
+   font-size: 20px;
+   font-style: italic;
+   font-family: cursive;
+   color: white;
+ }
+ .QuoteText {
+   text-align: center;
+   font-size: 26px;
+   font-weight: bold;
+   color: white;
+ }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  
+  <title>Neuron's quote generator</title>
+</head>
+<body>
+  
+  <header><div id="cover">
+  <a style="text-decoration: none;" href="/index.html"><h1 class="text"><img src="./logo.png" alt="Logo"> Neuron's quote generator</h1></a>
+   </div></header>
+     <main class="">
+  <form id="regForm" action="" >
+    
+   
+    <div id="unhide">
+      <h2 id="demo"></h2>
+    </div>
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">Name:
+        <p><input required name="name" type="text" placeholder="First name..." oninput="this.className = ''"></p>
+        <p><input name="name" type="text" placeholder="Last name..." oninput="this.className = ''"></p>
+      </div>
+    
+      <div class="tab">Contact Info:
+        <p><input required name="email" type="email" placeholder="E-mail..." oninput="this.className = ''"></p>
+        <p><input required name="number" minlength="11" maxlength="11" type="number" placeholder="Phone..." oninput="this.className = ''"></p>
+      </div>
+    
+      <div class="tab">Birthday:
+        <p><input type="number" min="2" required maxlength="2" placeholder="dd" oninput="this.className = ''"></p>
+        <p><input type="number" min="2" required maxlength="2" placeholder="mm" oninput="this.className = ''"></p>
+        <p><input type="number" min="2" required maxlength="4" placeholder="yyyy" oninput="this.className = ''"></p>
+      </div>
+    
+      
+      <div class="tab">Login Info:
+        <p><input required name="name" class="input1" value="John Doe" type="name" placeholder="Username..." oninput="this.className = ''"></p>
+        <p><input required name="password" minlength="6" maxlength="15" type="password" placeholder="Password..." oninput="this.className = ''"></p>
+      </div>
+    <div class="tab">
+     <h2>Thanks, we recieved your information</h2>
+     <br/>
+     <p>Click 'Next' to Continue</p>
+     <br />
+    </div>
+    <div class="tab">
+      <div class="boxSize">
+        <h1>
+          <i class="fas fa-quote-left"></i>
+          <span class="QuoteText" id="QuoteText"></span>
+          <i class="fas fa-quote-right"></i>
+        </h1>
+        <p class="QuoteWR" id="author"></p>
+      
+        <hr />
+        <div class="QuoteBtn">
+          <button type="button" class="GenerateQuote_next" onclick="GenerateQuote()">Generate quote</button>
+        </div>
+      </div>
+    </div>
+      <div id="remove" style="overflow:auto;">
+        <div style="float:right;">
+          <button type="submit" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+    
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    
+    </form>
+
+     </main>
+  <script src="./script.js"></script>
+  <script>
+     function myFunction() {
+        var x = document.getElementsByClassName("input1").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+  </script>
+</body>
+</html>
