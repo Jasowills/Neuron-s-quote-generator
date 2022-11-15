@@ -142,7 +142,7 @@ input.invalid {
   border: 0;
 }
 .GenerateQuote_next:hover {
-  background-color: black;
+  background-color: lightblue;
 }
 .unhide{
   display: none;
