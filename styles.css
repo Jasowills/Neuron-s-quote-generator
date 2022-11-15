@@ -128,9 +128,9 @@ input.invalid {
   width: 100%;
   display: flex;
   margin-top: 10px;
-  background-color: blue;
 }
-
+.QuoteBtn button{
+  background-color: blue}
 .GenerateQuote_next {
   font-size: 18px;
   border-radius: 5px;
